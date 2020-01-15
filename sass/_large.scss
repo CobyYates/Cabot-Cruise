@@ -1,0 +1,61 @@
+
+/* ------------- HEADER ------------- */
+header {
+	
+}
+
+
+/*  ------------- NAV -------------  */
+nav {
+	ul {
+		border-left: 1px solid rgba(0,0,0,0.3);
+	}
+	ul li {
+		width: auto;
+	}
+	ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
+	ul li a {
+		padding: .5rem 1rem;
+	}
+	.navi {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* ------------- MAIN ------------- */
+
+body {
+	margin: 0 auto;
+	clear: both;
+}
+
+main {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"one two three four"
+  }
+
+  .icon {
+	height: 170px;
+	width: 170px;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	margin-top: -45%;
+}
+
+.txt {
+	position: absolute;
+	bottom: 50px;
+}
+

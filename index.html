@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Cabot Cruizes</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="slick/slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,500"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <div class="smallNavBar">
+      <a href="#footerLinks" class="hamburgerOpen"></a>
+    </div>
+
+    <header>
+      <div class="headerContent">
+        <img src="./images/logo.png" class="logo" />
+        <h3><a href="tel:1-800-555-1234">1-800-555-1234</a></h3>
+      </div>
+    </header>
+
+    <main>
+      <div class="myslider">
+        <picture>
+          <source srcset="./images/hero-1.jpg" media="(min-width: 29.25rem)" />
+          <img srcset="./images/hero-1sm.jpg" alt="slider" />
+        </picture>
+
+        <picture>
+          <source srcset="./images/hero-2.jpg" media="(min-width: 29.25rem)" />
+          <img srcset="./images/hero-2sm.jpg" alt="slider" />
+        </picture>
+      </div>
+
+      <h1>Recent Blog Articles</h1>
+
+      <div class="gallery">
+        <a href="#" class="coolTrick one">
+          <img src="./images/blog1.jpeg" />
+          <!-- <div class="coverColor photo"></div> -->
+		  <div class="txt">Best Cruises of 2019</div>
+			<div class="txtLow">May 1, 2019</div>
+        </a>
+
+        <a href="#" class="coolTrick two">
+          <img src="./images/blog2.jpeg" />
+          <!-- <div class="coverColor photo"></div> -->
+		  <div class="txt">Best Places to Visit 2020</div>
+			<div class="txtLow">May 1, 2019</div>
+        </a>
+
+        <a href="#" class="coolTrick three">
+          <img src="./images/blog3.jpeg" />
+          <!-- <div class="coverColor photo"></div> -->
+		  <div class="txt">Traveling Car Guide</div>
+			<div class="txtLow">May 1, 2019</div>
+        </a>
+
+        <a href="#" class="coolTrick four">
+          <img src="./images/blog4.jpeg" />
+          <!-- <div class="coverColor photo"></div> -->
+		  <div class="txt">Best Rated Cruise Line</div>
+			<div class="txtLow">May 1, 2019</div>
+        </a>
+      </div>
+    </main>
+
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+      <div class="contact">
+        <section class="location">
+          <h3>Contact Us</h3>
+          <p>CABOT CRUISES</p>
+          <p>23 South Main St. Suite 16</p>
+          <p>Lexington, VA 24450</p>
+        </section>
+        <section class="phone">
+          <h3>Phone</h3>
+          <p><a href="tel:1-800-555-1234">1-800-555-1234</a></p>
+        </section>
+        <section class="hours">
+          <h3>Hours of Operation</h3>
+          <p>Monday – Friday 9am – 4pm</p>
+        </section>
+      </div>
+
+      <div class="why">
+        <h3>Why Cabot Cruises</h3>
+        <p>
+          Cabot Cruises is a travel agency providing the best cruise deals on
+          our online travel website. We can help you with all inclusive vacations
+          including discounted cruises.
+        </p>
+        <p>
+		  We do not sell travel to residents of Delaware, Iowa, Florida
+		  and Washington state because those states are just weird. If you are a
+          resident of one of these states, call your congressman and tell them
+          to change the regulatons.
+        </p>
+      </div>
+
+      <div class="news">
+        <h3>News Letter</h3>
+        <p>
+          Subscribe to our email list and stay upto-date with our honest offers
+          and latest specials.
+		</p>
+		<section id="search">
+			<form method="get" action="">
+			  <input
+				class="sfield"
+				type="search"
+				name="s"
+				placeholder="email@address.com"
+			  />
+			</form>
+			<button class="submitBtn">Submit</button>
+		</section>
+      </div>
+
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+	  </div>
+	  
+	  <div class="developer">
+		  &copy; 2020 Coby Yates &dot; Coberapps.com
+	  </div>
+    </footer>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".myslider").slick({
+          autoplay: true,
+          dots: true,
+          arrows: false,
+          cssEase: "ease-out",
+          speed: 1000,
+          autoplaySpeed: 5000
+        });
+      });
+    </script>
+
+    <!---------------------------- NAV STARTS HERE ---------------------------->
+
+    <nav class="clearfix" id="footerLinks">
+      <div class="smallNavBar"><a href="#top" class="hamburgerClose"></a></div>
+      <div class="navi">
+        <ul id="primaryNav">
+          <li class="active"><a href="#">HOME</a></li>
+          <li><a href="#">CRUISES</a></li>
+          <li><a href="#">AGENTS</a></li>
+          <li><a href="#">BOOK</a></li>
+        </ul>
+        <div id="search">
+          <form method="get" action="">
+            <input
+              class="sfield"
+              type="search"
+              name="s"
+              placeholder="search..."
+            />
+            <input class="sbtn" type="submit" value="" />
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
