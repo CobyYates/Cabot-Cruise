@@ -58,21 +58,29 @@ nav {
   display: flex;
   flex-direction: row;
 }
-// -------------------------------------------------------------
-
-.txt {
-  bottom: 10%;
-}
 
 // -----------------------------------------------------
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   grid-template-areas:
-    "one two"
-    "three four";
+    "one two three"
+    "four null null";
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
 }
 
 /* ------------- HEADER ------------- */
@@ -90,20 +98,25 @@ footer {
   grid-template-areas:
     "one two"
 	"three three"
-	"four four";
+  "four four"
+  "five five";
 	
 	.contact {
 		grid-area: one;
 	}
 	.news {
-		grid-area: two;
+    grid-area: two;
+    padding-right: 10px;
 	}
 	.why {
 		grid-area: three;
 	}
 	.social {
 		grid-area: four;
-	}
+  }
+  .developer {
+    grid-area: five;
+  }
 }
 
 .navi {
