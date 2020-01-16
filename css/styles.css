@@ -266,10 +266,13 @@ footer {
   footer .social {
     display: flex;
     justify-content: space-around;
-    padding: 10 20%; }
+    padding: 10 20%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
     footer .social .fab {
       color: white;
-      font-size: 2rem; }
+      font-size: 3.5rem; }
       footer .social .fab:hover {
         color: red; }
   footer .developer {
@@ -380,14 +383,11 @@ footer {
     .navi #search input {
       height: 30px; } }
 @media only screen and (min-width: 64em) {
-  /* ------------- HEADER ------------- */
   /*  ------------- NAV -------------  */
   nav ul {
     border-left: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li a {
     padding: .5rem 1rem; }
   nav .navi {
@@ -409,7 +409,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "one two three four"; }
+    grid-template-areas: "one two three four";
+    margin-bottom: 100px; }
 
   .icon {
     height: 170px;
@@ -421,6 +422,26 @@ footer {
 
   .txt {
     position: absolute;
-    bottom: 50px; } }
+    bottom: 50px; }
+
+  .footerContainer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "one two three" "four four four" "five five five"; }
+    .footerContainer .contact {
+      grid-area: one; }
+    .footerContainer .news {
+      grid-area: two;
+      padding-right: 10px; }
+    .footerContainer .why {
+      grid-area: three; }
+    .footerContainer .social {
+      grid-area: four; }
+    .footerContainer .developer {
+      grid-area: five; } }
 
 /*# sourceMappingURL=styles.css.map */
