@@ -27,11 +27,23 @@
   <body id="top">
     <div class="smallNavBar">
       <a href="#footerLinks" class="hamburgerOpen"></a>
+      <div class="search-container search">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
     </div>
 
     <header>
       <div class="headerContent">
-        <img src="./images/logo.png" class="logo" />
+        <figure class="logo">
+          <img src="images/logo.png"
+          srcset="
+          images/logo1x.png 1x,
+          images/logo2x.png 2x,
+          images/logo3x.png 3x">
+        </figure>
         <h3><a href="tel:1-800-555-1234">1-800-555-1234</a></h3>
       </div>
     </header>
@@ -39,13 +51,28 @@
     <main>
       <div class="myslider">
         <picture>
-          <source srcset="./images/hero-1.jpg" media="(min-width: 29.25rem)" />
+          <source srcset="./images/hero-1.jpg" media="(min-width: 680px)" />
           <img srcset="./images/hero-1sm.jpg" alt="slider" />
         </picture>
 
         <picture>
-          <source srcset="./images/hero-2.jpg" media="(min-width: 29.25rem)" />
+          <source srcset="./images/hero-2.jpg" media="(min-width: 680px)" />
           <img srcset="./images/hero-2sm.jpg" alt="slider" />
+        </picture>
+
+        <picture>
+          <source srcset="./images/hero-3.jpg" media="(min-width: 680px)" />
+          <img srcset="./images/hero-3sm.jpg" alt="slider" />
+        </picture>
+
+        <picture>
+          <source srcset="./images/hero-4.jpg" media="(min-width: 680px)" />
+          <img srcset="./images/hero-4sm.jpg" alt="slider" />
+        </picture>
+
+        <picture>
+          <source srcset="./images/hero-5.jpg" media="(min-width: 680px)" />
+          <img srcset="./images/hero-5sm.jpg" alt="slider" />
         </picture>
       </div>
 
@@ -54,29 +81,29 @@
       <div class="gallery">
         <a href="#" class="coolTrick one">
           <img src="./images/blog1.jpeg" />
-          <!-- <div class="coverColor photo"></div> -->
+          <div class="coverColor photo"></div>
           <div class="txt">Best Cruises of 2019</div>
           <div class="txtLow">May 1, 2019</div>
         </a>
 
         <a href="#" class="coolTrick two">
           <img src="./images/blog2.jpeg" />
-          <!-- <div class="coverColor photo"></div> -->
-          <div class="txt">Best Places to Visit 2020</div>
+          <div class="coverColor photo"></div>
+          <div class="txt">Places to Visit 2020</div>
           <div class="txtLow">May 1, 2019</div>
         </a>
 
         <a href="#" class="coolTrick three">
           <img src="./images/blog3.jpeg" />
-          <!-- <div class="coverColor photo"></div> -->
+          <div class="coverColor photo"></div>
           <div class="txt">Traveling Car Guide</div>
           <div class="txtLow">May 1, 2019</div>
         </a>
 
         <a href="#" class="coolTrick four">
           <img src="./images/blog4.jpeg" />
-          <!-- <div class="coverColor photo"></div> -->
-          <div class="txt">Best Rated Cruise Line</div>
+          <div class="coverColor photo"></div>
+          <div class="txt">Best Cruise Line</div>
           <div class="txtLow">May 1, 2019</div>
         </a>
       </div>
@@ -129,6 +156,7 @@
                 class="sfield"
                 type="search"
                 name="s"
+                required
                 placeholder="email@address.com"
               />
             </form>
@@ -141,10 +169,11 @@
           <a href="#"><i class="fab fa-twitter-square"></i></a>
           <a href="#"><i class="fab fa-youtube-square"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github-square"></i></a>
         </div>
 
         <div class="developer">
-          &copy; 2020 Coby Yates &dot; Coberapps.com
+          &copy; 2020 Coby Yates &dash; <a href="https://coberapps.com">Coberapps.com</a>
         </div>
       </div>
     </footer>
@@ -162,6 +191,25 @@
           autoplaySpeed: 5000
         });
       });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "TravelAgency",
+        "name": "Cabot Cruises",
+        "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+        "openingHours": "Mo-Fr 09:00-16:00",
+        "telephone": "+13855551234",
+        "faxNumber": "+1385559876",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "23 South Main St. Suite 16",
+          "addressLocality": "Lexington",
+          "addressRegion": "VA"
+        },
+        "image": "http://fullpath.com/logo.png",
+        "priceRange": "$500 to $4000"
+      }
     </script>
 
     <!---------------------------- NAV STARTS HERE ---------------------------->

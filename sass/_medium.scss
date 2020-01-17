@@ -86,8 +86,10 @@ nav {
 /* ------------- HEADER ------------- */
 header {
   height: 130px;
-  h1 {
+  h3 a{
     padding-top: 50px;
+    text-decoration: none;
+    color: $fontColor;
   }
 }
 
@@ -126,7 +128,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  #search input {
-    height: 30px;
-  }
+}
+
+.search {
+  display: none;
 }
