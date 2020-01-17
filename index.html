@@ -25,24 +25,49 @@
   </head>
 
   <body id="top">
-    <div class="smallNavBar">
-      <a href="#footerLinks" class="hamburgerOpen"></a>
-      <div class="search-container search">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <div class="topnav" id="myTopnav">
+      <div class="navWrapper">
+        <a class="empty"></a>
+        <a href="#home" class="active">HOME</a>
+        <a href="#news">CRUISES</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            AGENTS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">AGENT 1</a>
+            <a href="#">AGENT 2</a>
+            <a href="#">AGENT 3</a>
+          </div>
+        </div>
+        <a href="#about">BOOK</a>
+        <div class="search-container" id="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size:15px;"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a>
       </div>
     </div>
 
     <header>
       <div class="headerContent">
         <figure class="logo">
-          <img src="images/logo.png"
-          srcset="
-          images/logo1x.png 1x,
-          images/logo2x.png 2x,
-          images/logo3x.png 3x">
+          <img
+            src="images/logo.png"
+            srcset="
+              images/logo1x.png 1x,
+              images/logo2x.png 2x,
+              images/logo3x.png 3x
+            "
+          />
         </figure>
         <h3><a href="tel:1-800-555-1234">1-800-555-1234</a></h3>
       </div>
@@ -116,8 +141,12 @@
           <section class="location">
             <h3>Contact Us</h3>
             <p>CABOT CRUISES</p>
-            <p>23 South Main St. Suite 16</p>
-            <p>Lexington, VA 24450</p>
+            <a
+              href="https://www.google.com/maps/search/pier+in+florida+for+cruises/@25.791308,-80.1790951,13z"
+            >
+              <p>1 Washington Ave,</p>
+              <p>Miami Beach, FL 24450</p></a
+            >
           </section>
           <section class="phone">
             <h3>Phone</h3>
@@ -173,7 +202,8 @@
         </div>
 
         <div class="developer">
-          &copy; 2020 Coby Yates &dash; <a href="https://coberapps.com">Coberapps.com</a>
+          &copy; 2020 Coby Yates &dash;
+          <a href="https://coberapps.com">Coberapps.com</a>
         </div>
       </div>
     </footer>
@@ -187,7 +217,7 @@
           dots: true,
           arrows: false,
           cssEase: "ease-out",
-          speed: 1000,
+          speed: 500,
           autoplaySpeed: 5000
         });
       });
@@ -203,38 +233,24 @@
         "faxNumber": "+1385559876",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "23 South Main St. Suite 16",
-          "addressLocality": "Lexington",
-          "addressRegion": "VA"
+          "streetAddress": "1 Washington Ave",
+          "addressLocality": "Miami Beach",
+          "addressRegion": "FL"
         },
         "image": "http://fullpath.com/logo.png",
         "priceRange": "$500 to $4000"
       }
     </script>
 
-    <!---------------------------- NAV STARTS HERE ---------------------------->
-
-    <nav class="clearfix" id="footerLinks">
-      <div class="smallNavBar"><a href="#top" class="hamburgerClose"></a></div>
-      <div class="navi">
-        <ul id="primaryNav">
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">CRUISES</a></li>
-          <li><a href="#">AGENTS</a></li>
-          <li><a href="#">BOOK</a></li>
-        </ul>
-        <div id="search">
-          <form method="get" action="">
-            <input
-              class="sfield"
-              type="search"
-              name="s"
-              placeholder="search..."
-            />
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";          
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>

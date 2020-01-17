@@ -35,64 +35,8 @@ header {
 
 /*  ------------- NAV -------------  */
 
-.smallNavBar {
-  background-color: $menuColor;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .search {
-    input {
-      height: 44px;
-    }
-    button {
-      height: 44px;
-      width: 44px;
-    }
-  }
-}
 
-.hamburger {
-  display: block;
-  width: 7rem;
-  height: 2.75rem;
-  background-repeat: no-repeat;
-  background-position: 2vw center;
-}
 
-.hamburgerOpen {
-  @extend .hamburger;
-  background-image: url(../images/menuOpenWhite.png);
-}
-
-.hamburgerClose {
-  @extend .hamburger;
-  background-image: url(../images/menuCloseWhite.png);
-}
-
-nav {
-  height: 100vh;
-  width: 100%;
-  background-color: $menuColor;
-  ul li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-    padding: 0.6rem 2%;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-
-    ul li a {
-      padding-left: 8%;
-    }
-
-    .active a {
-      background-color: $primaryColor;
-    }
-  }
-  #search {
-    display: none;
-  }
-}
 /*  ------------- MAIN -------------  */
 
 main {
@@ -114,16 +58,6 @@ a.coolTrick {
   &:hover .coverColor {
     opacity: 0.1;
   }
-}
-
-.icon {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: 50%;
-  margin-left: -25%;
-  top: 50%;
-  margin-top: -45%;
 }
 
 .txt {
@@ -213,6 +147,9 @@ footer {
 
   section {
     padding-bottom: 10px;
+  }
+  .contact a{
+    color: $fontColor;
   }
   .phone a {
     //   text-decoration: none;

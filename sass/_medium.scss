@@ -19,47 +19,13 @@ header {
   }
 }
 
-nav {
-  position: absolute;
-  top: 100px;
-  height: auto;
-  background-image: linear-gradient(grey, rgb(75, 75, 75));
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  ul {
-    display: flex;
-    flex-direction: row;
-    li {
-      width: 100px;
-    }
-    a {
-      display: block;
-      text-align: center;
-      font-weight: $boldWeight;
-      padding: 0.5rem 0;
-      color: white;
-      text-decoration: none;
-    }
-    .active a {
-      background-color: darken($menuColor, 10%);
-    }
-  }
-  ul li a:hover {
-    color: $secondaryColor;
-    background-color: $primaryColor;
-  }
-  .navi {
-    #search {
-      display: inline;
-    }
-  }
-}
-
-#primary nav {
-  display: flex;
-  flex-direction: row;
-}
-
 // -----------------------------------------------------
+
+.navWrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .gallery {
   display: grid;
