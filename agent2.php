@@ -26,70 +26,57 @@
 
   <body id="top">
     <?php
-$title="Home";
+$title="Agents";
 include '_top.php';
 ?>
 
-    
-
     <main>
-      <div class="myslider">
-        <picture>
-          <source srcset="./images/hero-1.jpg" media="(min-width: 680px)" />
-          <img srcset="./images/hero-1sm.jpg" alt="slider" />
-        </picture>
-
-        <picture>
-          <source srcset="./images/hero-2.jpg" media="(min-width: 680px)" />
-          <img srcset="./images/hero-2sm.jpg" alt="slider" />
-        </picture>
-
-        <picture>
-          <source srcset="./images/hero-3.jpg" media="(min-width: 680px)" />
-          <img srcset="./images/hero-3sm.jpg" alt="slider" />
-        </picture>
-
-        <picture>
-          <source srcset="./images/hero-4.jpg" media="(min-width: 680px)" />
-          <img srcset="./images/hero-4sm.jpg" alt="slider" />
-        </picture>
-
-        <picture>
-          <source srcset="./images/hero-5.jpg" media="(min-width: 680px)" />
-          <img srcset="./images/hero-5sm.jpg" alt="slider" />
-        </picture>
+      <h1>Agent-Jeff Jeffrey</h1>
+      <div class="agentDetails">
+        <img class="agentPhoto" src="/images/agent1.jpg">
+          <div class="details">
+              <div class="phone">
+          <h3>Phone:</h3>
+          <p>1-800-555-1234 ext. 12</p>
+        </div>
+        <div class="working">
+          <h3>Working:</h3>
+          <p>Monday, Wednesday, Friday</p>
+        </div>
+        <div class="destination">
+          <h3>Destination Specialization:</h3>
+          <p>
+            Israel, Egypt, Italy, Caribbean cruises.
+          </p>
+        </div>
+        <div class="hours">
+          <h3>Working:</h3>
+          <p>8:00am-6:00pm</p>
+        </div>
+        <div class="biography">
+          <h3>Biography</h3>
+          <p>
+            I have loved travel for as long as I can remember. At the age of 12
+            I asked if I could fly by myself to Hawaii and I never came back.
+          </p>
+          <p>
+            Right out of high school I started into travel school and have had
+            the opportunity to work in many aspects of the industry. In every
+            aspect I have worked I have had the opportunity to help people
+            travel, to help fulfill people's dreams, what could be better to do
+            every day!
+          </p>
+        </div>
+          </div>
       </div>
-
-      <h1>Recent Blog Articles</h1>
-
-      <div class="gallery">
-        <a href="#" class="coolTrick one">
-          <img src="./images/blog1.jpeg" />
-          <div class="coverColor photo"></div>
-          <div class="txt">Best Cruises of 2019</div>
-          <div class="txtLow">May 1, 2019</div>
-        </a>
-
-        <a href="#" class="coolTrick two">
-          <img src="./images/blog2.jpeg" />
-          <div class="coverColor photo"></div>
-          <div class="txt">Places to Visit 2020</div>
-          <div class="txtLow">May 1, 2019</div>
-        </a>
-
-        <a href="#" class="coolTrick three">
-          <img src="./images/blog3.jpeg" />
-          <div class="coverColor photo"></div>
-          <div class="txt">Traveling Car Guide</div>
-          <div class="txtLow">May 1, 2019</div>
-        </a>
-
-        <a href="#" class="coolTrick four">
-          <img src="./images/blog4.jpeg" />
-          <div class="coverColor photo"></div>
-          <div class="txt">Best Cruise Line</div>
-          <div class="txtLow">May 1, 2019</div>
-        </a>
+      <div class="comments">
+        <h3>Customer Comments</h3>
+        <section><p>"Thank you Jeff for all your planning and efforts to ensure that we could enjoy our tour and bring back such wonderful memories."</p>
+        <p>-John Doe</p></section>
+        <section><p>"Thank you for your cheery attitude and hard work during the planning of our tour!"</p>
+        <p>-The Smiths</p></section>
+        <section><p>"Thanks for your patience and efficiency. Let's do it again sometime very soon!"</p>
+        <p>-Jane and John Westagar</p></section>
       </div>
     </main>
 
@@ -139,5 +126,6 @@ include '_top.php';
         }
       }
     </script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

@@ -113,5 +113,6 @@ include '_top.php';
         }
       }
     </script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
