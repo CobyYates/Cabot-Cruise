@@ -33,7 +33,7 @@ include '_top.php';
     <main>
       <h1>Agent-Jeff Jeffrey</h1>
       <div class="agentDetails">
-        <img class="agentPhoto" src="/images/agent1.jpg">
+        <img class="agentPhoto" src="/images/agent2.jpg.jpg">
           <div class="details">
               <div class="phone">
           <h3>Phone:</h3>
